@@ -8,3 +8,15 @@ let nome2 = "JOSÉ"; //string
 nome2 = "FELIPE"; //string
 
 cont salario = 1300 //number
+
+const pincel = {
+	cor:"azul",
+	tipoDePonta: 1,
+	possuiTinta:true,
+	fabricante:"Pilot"
+}
+
+const caixa = {
+	quantidade:12,
+	item:[pincel, pincel, pincel]
+}

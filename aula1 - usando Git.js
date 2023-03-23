@@ -1,10 +1,10 @@
-var nome1 = "JOÃO"; //string
+var nome1 = "JOÃƒO"; //string
 nome1 = "MATEUS"; //string
 nome1 = 85996710231; //number
 nome1 = true; // boolean
 nome1 = ["Pedro", 123, "Felipe", {nome: "Matheus"}, 1.765]; //array
 
-let nome2 = "JOSÉ"; //string
+let nome2 = "JOSï¿½"; //string
 nome2 = "FELIPE"; //string
 
 cont salario = 1300 //number

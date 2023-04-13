@@ -1,22 +1,34 @@
-import { View, StyleSheet, Text, Image } from "react-native";
+import { View, StyleSheet, Text, Image, Button } from "react-native";
+
 import logoEstacio from '../assets/estacio.png';
 
-export default function LoginScreen () {
+export default function LoginScreen ({navigation}) {
     return(
-        <View style={StyleSheet.container}>
+        <View style={styles.container}>
             <Text>Login Screen</Text>
-            <Image source={logoEstacio} style={StyleSheet.logoEstacio}></Image>
+            <Image source={logoEstacio} style={styles.logoEstacio}></Image>
+            <Button title="Ir para Home Screen" 
+                style={styles.navigationButton}
+                onPress={() => navigation.navigate('Home')}
+            />
         </View>
     );
 }
 
-const style = StyleSheet.create ({
+const styles = StyleSheet.create ({
     container: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     logoEstacio: {
-        width: 200
+        width: 200,
+        height: 200,
+    },
+    navigationButton: {
+        marginTop: 20,
+        borderColor: '#000',
+        borderWidth: 1,
+        borderRadius: 5,
     }
 });

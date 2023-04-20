@@ -9,7 +9,7 @@ export default function LoginScreen ({navigation}) {
             <Image source={logoEstacio} style={styles.logoEstacio}></Image>
             <Button title="Ir para Home Screen" 
                 style={styles.navigationButton}
-                onPress={() => navigation.navigate('Home')}
+                onPress={() => navigation.navigate('Main')}
             />
         </View>
     );
